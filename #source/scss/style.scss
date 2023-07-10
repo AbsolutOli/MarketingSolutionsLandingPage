@@ -2,15 +2,137 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 body {
-    font-family: Poppins;
+    font-family: "Poppins";
     font-weight: 300;
     color: #9C9C9C;
+    background-color: #0D0D11;
 }
 
-.wrapper {}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
 
 [class*="__container"] {
     max-width: 1310px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
+.button {
+    display: inline-block;
+    padding: 16px 30px;
+    text-align: center;
+    height: 52px;
+    border-radius: 50px;
+    background-color: #3D96F4;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+        background-color: #337ece;
+    }
+
+    @media (max-width: 991.98px) {
+        padding: 14px 20px;
+    }
+}
+
+/*|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|HEADER|*/
+.header {
+    &__container {
+        display: flex;
+        min-height: 116px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        align-items: center;
+        column-gap: 35px;
+
+        @media (max-width: 991.98px) {
+            column-gap: 25px;
+        }
+    }
+
+    &__logo {}
+
+    &__menu {
+        flex: 1 1 auto;
+    }
+
+    &__cart {}
+
+    &__button {
+        flex: 0 0 auto;
+    }
+}
+
+.menu {
+    &__icon {}
+
+    &__list {
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 35px;
+        row-gap: 3px;
+        flex-wrap: wrap;
+
+        @media (max-width: 991.98px) {
+            column-gap: 25px;
+        }
+    }
+
+    &__item {}
+
+    &__link {
+        color: #fff;
+        line-height: 1.6;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.icon-menu {
+    display: none;
+}
+
+.cart-header {
+    display: flex;
+    gap: 4.8px;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1px;
+
+    &__text {
+        font-size: 18px;
+        line-height: 1.55;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__quantity {
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        line-height: 1;
+        border-radius: 50%;
+        background: rgba(129, 129, 139, 0.30);
+    }
 }
