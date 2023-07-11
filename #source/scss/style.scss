@@ -25,6 +25,8 @@ body {
     flex: 1 1 auto;
 
     &__main {}
+
+    &__clients {}
 }
 
 .button {
@@ -295,11 +297,11 @@ body {
 
 /*|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|MAIN|*/
 .main {
-    padding: 160px 0 193px 0;
+    padding: 160px 0 100px 0;
 
 
     @media (max-width: 991.98px) {
-        padding: 120px 0 100px 0;
+        padding: 120px 0 70px 0;
     }
 
     @media (max-width: 767.98px) {
@@ -405,5 +407,41 @@ body {
 
     .images-main__item_3 {
         border-radius: 50% 0 50% 50%;
+    }
+}
+
+/*|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|CLIENTS|*/
+.clients {
+
+    padding: 100px 0 70px 0;
+
+    @media (max-width: 767.98px) {
+        padding: 50px 0 50px 0;
+    }
+
+    &__container {}
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 14px;
+        line-height: 160%;
+        letter-spacing: 1px;
+        margin: 0 0 44px 0;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__item {
+        img {
+            max-width: 100%;
+        }
     }
 }
