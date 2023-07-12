@@ -27,6 +27,9 @@ body {
     &__main {}
 
     &__clients {}
+
+    &__services {}
+
 }
 
 .button {
@@ -62,6 +65,27 @@ body {
 
 .header-main {
 
+    &__label {
+        border-radius: 12px;
+        border: 1px solid rgba(129, 129, 139, 0.20);
+        color: #9C9C9C;
+        font-size: 10.8px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        line-height: 1.6;
+        display: inline-block;
+        padding: 11px 19px;
+        transition: border 0.3s ease 0s;
+
+        &:hover {
+            border: 1px solid rgba(129, 129, 139, 0.50);
+        }
+
+        &:not(:last-child) {
+            margin: 0 0 19px 0;
+        }
+    }
+
     &__title {
         color: #fff;
         font-size: 51.2px;
@@ -83,7 +107,7 @@ body {
 
     &__text {
         font-size: 18px;
-        color: #9C9C9C;
+        color: #81818B;
         line-height: 150%;
     }
 }
@@ -443,5 +467,106 @@ body {
         img {
             max-width: 100%;
         }
+    }
+}
+
+/*|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|SERVICES|*/
+
+.services {
+    padding: 70px 0 90px 0;
+
+    @media (max-width: 767.98px) {
+        padding: 50px 0 50px 0;
+    }
+
+    &__container {
+        display: flex;
+        gap: 32px;
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        flex: 0 1 50%;
+        align-self: center;
+    }
+
+    &__header {}
+
+    &__items {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+
+        @media (max-width: 620px) {
+            flex-direction: column;
+        }
+    }
+
+    &__column {
+        &:first-child {
+            @media (min-width: 620px) {
+                margin: 48px 0 0 0;
+            }
+        }
+    }
+
+    &__item {}
+}
+
+.header-main {
+
+    &__label {}
+
+    &__title {
+        @media (max-width: 1100px) {
+            max-width: none;
+        }
+    }
+
+    &__text {
+        @media (max-width: 1100px) {
+            max-width: none;
+        }
+    }
+
+    &__actions {}
+
+    &__button {}
+}
+
+.item-services {
+    border-radius: 30px;
+    background: rgba(129, 129, 139, 0.10);
+    padding: 55px 25px 61px 25px;
+    display: block;
+
+    &:not(:last-child) {
+        margin: 0 0 32px 0;
+    }
+
+    &__icon {
+        &:not(:last-child) {
+            margin: 0 0 16px 0;
+        }
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 19.2px;
+        font-weight: 400;
+        line-height: 1.4;
+
+        &:not(:last-child) {
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__text {
+        color: #81818B;
+        line-height: 1.5;
     }
 }
