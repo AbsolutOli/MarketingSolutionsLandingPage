@@ -31,6 +31,8 @@ body {
     &__services {}
 
     &__why {}
+
+    &__advantages {}
 }
 
 .button {
@@ -388,6 +390,7 @@ body {
             position: absolute;
             top: -15.52px;
             left: -31.19px;
+            z-index: -1;
         }
     }
 
@@ -648,6 +651,7 @@ body {
 
         img {
             max-width: 100%;
+            transform: scale(1.01);
         }
 
         &_1 {
@@ -664,4 +668,80 @@ body {
 .services {
 
     &__header {}
+}
+
+/*|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|ADVANTAGES|*/
+.advantages {
+    padding: 90px 0;
+
+    @media (max-width: 991.98px) {
+        padding: 70px 0;
+    }
+
+    @media (max-width: 767.98px) {
+        padding: 50px 0;
+    }
+
+    &__container {
+        display: flex;
+        row-gap: 32px;
+
+        @media (max-width: 991.98px) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {}
+
+    &__items {
+        flex: 1 1 auto;
+        padding-right: 32px;
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        @media (max-width: 650px) {
+            grid-template-columns: auto;
+            padding-right: 0px;
+        }
+    }
+
+    &__item {
+        padding: 40px;
+        border-radius: 30px;
+        background: rgba(129, 129, 139, 0.10);
+    }
+
+    &__value {
+        color: #FFF;
+        font-size: 51.2px;
+        font-weight: 500;
+        line-height: 120%;
+
+        &:not(:last-child) {
+            margin: 0 0 32px 0;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    &__image {
+        align-self: flex-start;
+        flex: 0 0 38%;
+        overflow: hidden;
+        border-radius: 0 66.486648% 56.274965% 57.079509%/0 56.108844% 51.965986% 48.92517%;
+
+        img {
+            max-width: 100%;
+            transform: scale(1.01);
+        }
+
+        @media (max-width: 991.98px) {
+            align-self: center;
+        }
+    }
 }
