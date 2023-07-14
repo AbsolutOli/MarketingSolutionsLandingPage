@@ -1114,7 +1114,7 @@ body {
 .item-blog__image {
   display: block;
   position: relative;
-  padding-bottom: 49.5%;
+  padding-bottom: 48.5%;
 }
 .item-blog__image img {
   position: absolute;
@@ -1180,5 +1180,87 @@ body {
   .blog .header-main__actions {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+/*|START|START|START|START|START|START|START|START|START|START|START|START|START|START|START|START|START|START|*/
+.start {
+  padding: 90px 0 100px 0;
+}
+@media (max-width: 991.98px) {
+  .start {
+    padding: 70px 0 80px 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .start {
+    padding: 50px 0 60px 0;
+  }
+}
+.start__body {
+  border-radius: 30px;
+  background: rgba(129, 129, 139, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 52px 40px;
+}
+@media (max-width: 991.98px) {
+  .start__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 30px;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+.start__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  text-align: center;
+}
+.start__title {
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.start__title:not(:last-child) {
+  margin: 0 0 16px 0;
+}
+@media (max-width: 767.98px) {
+  .start__title {
+    font-size: 24px;
+  }
+}
+.start__text {
+  line-height: 1.5;
+  max-width: 305px;
+  display: inline-block;
+}
+.start__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media (max-width: 479.98px) {
+  .start__actions {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
